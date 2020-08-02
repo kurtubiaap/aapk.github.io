@@ -1,0 +1,37 @@
+<table class="voucher" style="width: 230px;">
+    <tbody>
+      <tr>
+        <td style="font-weight: bold; border-right: 2px  dashed black;" class="rotate" rowspan="4"><div><span class="price">%u_moneyPaid%</span></div></td>
+        <td style="font-weight: bold" colspan="2">%u_owner%</td>
+
+        <td rowspan="3"><div >%u_qrCode% </div></td>  
+  
+      </tr>
+      <tr>
+        <td class="vc" style="width: 100%; font-weight: bold; font-size: 18px; text-align: center; display:none;">
+          %u_username%
+        </td>
+        <td class="up" style="width: 100%; font-weight: bold; font-size: 15px; text-align: center; display:none;">
+            User: %u_username%
+            <br>
+            Pass: %u_password%
+        </td>
+      
+      </tr>
+      <tr>
+        <td style="font-size: 10px;"><span class="validity">%u_timeLeft%</span> <span class="timelimit">%u_limitUptime%</span> <span class="datalimit>">%u_limitDownload%</span></td>
+      </tr>
+      <tr>
+        <td colspan="3" style="font-size: 10px;">Login: http://%u_dnsName% <span class="num"> [%u_number%]</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+  if("%u_username%" == "%u_password%"){
+    $(".vc").show()
+  }else if("%u_username%" != "%u_password%"){
+    $(".up").show()
+  }
+  </script>
+
+

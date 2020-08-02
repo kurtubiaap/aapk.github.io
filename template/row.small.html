@@ -1,0 +1,34 @@
+	            	              	            	              
+<table class="voucher" style=" width: 160px;">
+  <thead>
+    <tr>
+      <th colspan="2" style="width:100%;text-align: left; font-size: 14px; font-weight:bold; border-bottom: 1px black solid;">%u_owner%<span class="num">%u_number%</span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="color: black; font-size: 12px; text-align: center;">
+      <td class="vc" style="display:none; width: 160px;">Voucher &nbsp;</td>
+      <td class="up" style="display:none; width: 80px;">Username</td>
+      <td class="up" style="display:none; width: 80px;">Password</td>
+    </tr>
+    <tr style="color: black; font-size: 14px; text-align: center;">
+      <td style="border: 1px solid black; font-weight:bold;">%u_username%</td>
+      <td class="up" style="border: 1px solid black; font-weight:bold;display:none;">%u_password%</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr style="color: black; font-size: 12px; text-align: center;">
+      <th colspan="2" ><span class="validity">%u_timeLeft%</span> <span class="timelimit">%u_limitUptime%</span> <span class="datalimit>">%u_limitDownload%</span> <span class="price">%u_moneyPaid%</span></th>
+    </tr>
+  </tfoot>
+</table>
+  <script>
+  if("%u_username%" == "%u_password%"){
+    $(".vc").show()
+  }else if("%u_username%" != "%u_password%"){
+    $(".up").show()
+  }
+  </script>
+
+
